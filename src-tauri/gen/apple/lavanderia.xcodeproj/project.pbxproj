@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CA3019904CDC9612CDF817D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566045CA59A68C201878F2AE /* QuartzCore.framework */; };
+		0CFEE8D3623EB85189311058 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7744B9EA2046DC912EA8C02 /* WebKit.framework */; };
+		286729DE3A5C877E2A142DD2 /* libapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CA8B5D9472EED14A6F4556 /* libapp.a */; };
+		4BA7C89452ED804141B92003 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC7A1617549238162B0F5754 /* main.mm */; };
+		4D0D650615D3051F83927F70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4514F4959B569FA88C12887 /* LaunchScreen.storyboard */; };
+		4FACFA1F834710FAF7545E80 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96634F0B85D4B823A29B1023 /* MetalKit.framework */; };
+		5494140B240252B400DC0F0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87D0B92C537F211094BC527 /* UIKit.framework */; };
+		8A40D0E3AFCA73D3F7B182A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E020D2849EC42EA794424BF /* Assets.xcassets */; };
+		B40A26553DF6E5E983DBF1AA /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0106AEC22C9AEC76D9EF2D /* assets */; };
+		C9FF83D6D36BE768289B59B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C98276D261E0E964B613C73 /* CoreGraphics.framework */; };
+		D0FA2FDBF14DC754E2C83926 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F6655BED8500D1A43B6D5 /* Metal.framework */; };
+		F711A08539558DC24CF41EDD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA10FF22980869E4462DCBC3 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		115A28A368F93CFF8ACA898D /* lavanderia_iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = lavanderia_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB7E7BA230458FD00879DC0 /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		2BD109652ADABAD049CB8225 /* main.rs */ = {isa = PBXFileReference; path = main.rs; sourceTree = "<group>"; };
+		36CA8B5D9472EED14A6F4556 /* libapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp.a; sourceTree = "<group>"; };
+		566045CA59A68C201878F2AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5C98276D261E0E964B613C73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5DB7CCEBD79244903C11898A /* lavanderia_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lavanderia_iOS.entitlements; sourceTree = "<group>"; };
+		5EF6201AE20423F14F1CA54E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D0106AEC22C9AEC76D9EF2D /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		96634F0B85D4B823A29B1023 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		9E020D2849EC42EA794424BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA10FF22980869E4462DCBC3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AC7A1617549238162B0F5754 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		B7744B9EA2046DC912EA8C02 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		D109E6F1DD74BCD38A60F14B /* lib.rs */ = {isa = PBXFileReference; path = lib.rs; sourceTree = "<group>"; };
+		DD4F6655BED8500D1A43B6D5 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		E4514F4959B569FA88C12887 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F87D0B92C537F211094BC527 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34C4444FB9CEA1867DDC30BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286729DE3A5C877E2A142DD2 /* libapp.a in Frameworks */,
+				C9FF83D6D36BE768289B59B7 /* CoreGraphics.framework in Frameworks */,
+				D0FA2FDBF14DC754E2C83926 /* Metal.framework in Frameworks */,
+				4FACFA1F834710FAF7545E80 /* MetalKit.framework in Frameworks */,
+				0CA3019904CDC9612CDF817D /* QuartzCore.framework in Frameworks */,
+				F711A08539558DC24CF41EDD /* Security.framework in Frameworks */,
+				5494140B240252B400DC0F0F /* UIKit.framework in Frameworks */,
+				0CFEE8D3623EB85189311058 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16FA9653E4A0369AA3297236 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B8851C15A3FDCA32E79828C1 /* lavanderia */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6882D1315C2B8967674440EC = {
+			isa = PBXGroup;
+			children = (
+				8D0106AEC22C9AEC76D9EF2D /* assets */,
+				9E020D2849EC42EA794424BF /* Assets.xcassets */,
+				E4514F4959B569FA88C12887 /* LaunchScreen.storyboard */,
+				CBC64FCE6F0121B4566F117C /* Externals */,
+				A370452096DA9AC4B6F3D6EB /* lavanderia_iOS */,
+				16FA9653E4A0369AA3297236 /* Sources */,
+				7EF7CA1AAB9FA681F4136C88 /* src */,
+				ED60473D96108C004C4C2D76 /* Frameworks */,
+				EC2D195C5C99F58C7311F3BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EF7CA1AAB9FA681F4136C88 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D109E6F1DD74BCD38A60F14B /* lib.rs */,
+				2BD109652ADABAD049CB8225 /* main.rs */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		A370452096DA9AC4B6F3D6EB /* lavanderia_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5EF6201AE20423F14F1CA54E /* Info.plist */,
+				5DB7CCEBD79244903C11898A /* lavanderia_iOS.entitlements */,
+			);
+			path = lavanderia_iOS;
+			sourceTree = "<group>";
+		};
+		B8851C15A3FDCA32E79828C1 /* lavanderia */ = {
+			isa = PBXGroup;
+			children = (
+				AC7A1617549238162B0F5754 /* main.mm */,
+				E9A0B09FFD34CFA987B76184 /* bindings */,
+			);
+			path = lavanderia;
+			sourceTree = "<group>";
+		};
+		CBC64FCE6F0121B4566F117C /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		E9A0B09FFD34CFA987B76184 /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				1BB7E7BA230458FD00879DC0 /* bindings.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		EC2D195C5C99F58C7311F3BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				115A28A368F93CFF8ACA898D /* lavanderia_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED60473D96108C004C4C2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C98276D261E0E964B613C73 /* CoreGraphics.framework */,
+				36CA8B5D9472EED14A6F4556 /* libapp.a */,
+				DD4F6655BED8500D1A43B6D5 /* Metal.framework */,
+				96634F0B85D4B823A29B1023 /* MetalKit.framework */,
+				566045CA59A68C201878F2AE /* QuartzCore.framework */,
+				AA10FF22980869E4462DCBC3 /* Security.framework */,
+				F87D0B92C537F211094BC527 /* UIKit.framework */,
+				B7744B9EA2046DC912EA8C02 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3901BDD502C46460BE3584EB /* lavanderia_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB3ED9DFAB461F0FF4FA082 /* Build configuration list for PBXNativeTarget "lavanderia_iOS" */;
+			buildPhases = (
+				2E202D6C3D6CEAA87B70CBB8 /* Build Rust Code */,
+				1D20B6C93686FC04358ED5D1 /* Sources */,
+				60C7E6785D43CCE87C3F34A1 /* Resources */,
+				34C4444FB9CEA1867DDC30BC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lavanderia_iOS;
+			productName = lavanderia_iOS;
+			productReference = 115A28A368F93CFF8ACA898D /* lavanderia_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64AC9A0B49F36C4DD1FFBF93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = F19793BA0DD81B15DE5EBAFC /* Build configuration list for PBXProject "lavanderia" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6882D1315C2B8967674440EC;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3901BDD502C46460BE3584EB /* lavanderia_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60C7E6785D43CCE87C3F34A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A40D0E3AFCA73D3F7B182A3 /* Assets.xcassets in Resources */,
+				4D0D650615D3051F83927F70 /* LaunchScreen.storyboard in Resources */,
+				B40A26553DF6E5E983DBF1AA /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E202D6C3D6CEAA87B70CBB8 /* Build Rust Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Externals/x86_64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64-sim/${CONFIGURATION}/libapp.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pnpm tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D20B6C93686FC04358ED5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA7C89452ED804141B92003 /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		36EB15D5EAE52151B1295DCB /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = lavanderia_iOS/lavanderia_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = lavanderia_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavanderia.app;
+				PRODUCT_NAME = lavanderia;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+				CODE_SIGN_STYLE = Automatic;
+			};
+			name = debug;
+		};
+		48D693C1905A8A752BD886FF /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = debug;
+		};
+		9C565A21168193D763FBF7C7 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = release;
+		};
+		B909E2CE6B8F5AC11C957E3F /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = lavanderia_iOS/lavanderia_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = lavanderia_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavanderia.app;
+				PRODUCT_NAME = lavanderia;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+				CODE_SIGN_STYLE = Automatic;
+			};
+			name = release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DB3ED9DFAB461F0FF4FA082 /* Build configuration list for PBXNativeTarget "lavanderia_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36EB15D5EAE52151B1295DCB /* debug */,
+				B909E2CE6B8F5AC11C957E3F /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		F19793BA0DD81B15DE5EBAFC /* Build configuration list for PBXProject "lavanderia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48D693C1905A8A752BD886FF /* debug */,
+				9C565A21168193D763FBF7C7 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64AC9A0B49F36C4DD1FFBF93 /* Project object */;
+}

@@ -1,0 +1,82 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.4.1/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"files": {
+		"ignore": [
+			"node_modules"
+		]
+	},
+	"formatter": {
+		"enabled": true
+	},
+	"javascript": {
+		"formatter": {
+			"enabled": true,
+			"indentStyle": "space",
+			"semicolons": "asNeeded"
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noForEach": "warn"
+			},
+			"correctness": {
+				"noUnusedImports": "error",
+				"noUnusedVariables": "error"
+			},
+			"nursery": {
+				"noConsole": "warn"
+			},
+			"style": {
+				"noUnusedTemplateLiteral": "error",
+				"useFilenamingConvention": "warn",
+				"useNamingConvention": {
+					"level": "error",
+					"options": {
+						"conventions": [
+							{
+								"selector": {
+									"kind": "interface"
+								},
+								"match": "I(.*)|(.*)Error",
+								"formats": [
+									"PascalCase"
+								]
+							},
+							{
+								"selector": {
+									"kind": "typeAlias"
+								},
+								"match": "I(.*)|(.*)Error",
+								"formats": [
+									"PascalCase"
+								]
+							},
+							{
+								"selector": {
+									"kind": "typeProperty"
+								},
+								"formats": [
+									"PascalCase",
+									"camelCase"
+								]
+							}
+						]
+					}
+				},
+				"useShorthandArrayType": "error",
+				"useSingleCaseStatement": "error",
+				"useTemplate": "warn"
+			},
+			"suspicious": {
+				"noConsoleLog": "error",
+				"useAwait": "error"
+			}
+		}
+	}
+}
