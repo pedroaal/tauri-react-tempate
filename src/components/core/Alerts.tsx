@@ -5,7 +5,7 @@ import {
   HiOutlineInformationCircle,
 } from "react-icons/hi2"
 
-import { useAppSelector } from "@/hooks/useStore"
+import { useAppSelector } from "~/hooks/useStore"
 
 interface IConfig {
   color: string
@@ -22,17 +22,17 @@ const getConfig = (type: string): IConfig => {
     case "error":
       return {
         color: "alert-error",
-        icon: <HiOutlineExclamationCircle size="size-6" />,
+        icon: <HiOutlineExclamationCircle className="size-6" />,
       }
     case "warning":
       return {
         color: "alert-warning",
-        icon: <HiOutlineExclamationTriangle size="size-6" />,
+        icon: <HiOutlineExclamationTriangle className="size-6" />,
       }
     default:
       return {
         color: "alert-info",
-        icon: <HiOutlineInformationCircle size="size-6" />,
+        icon: <HiOutlineInformationCircle className="size-6" />,
       }
   }
 }
