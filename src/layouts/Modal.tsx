@@ -2,10 +2,10 @@ import { forwardRef } from "react"
 import type { ReactNode } from "react"
 import { HiOutlineXMark } from "react-icons/hi2"
 
-import { closeModal } from "@/slices/modalSlice"
-import { useAppDispatch } from "@/hooks/useStore"
+import { closeModal } from "~/slices/modalSlice"
+import { useAppDispatch } from "~/hooks/useStore"
 
-import ButtonIcon from "@/components/core/ButtonIcon"
+import ButtonIcon from "~/components/core/ButtonIcon"
 
 interface IProps {
   children: ReactNode

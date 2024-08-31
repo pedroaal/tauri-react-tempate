@@ -5,7 +5,7 @@ import {
   useSelector,
 } from "react-redux"
 
-import type { IRootState, IAppDispatch } from "@/utils/store"
+import type { IRootState, IAppDispatch } from "~/utils/store"
 
 export const useAppDispatch: () => IAppDispatch = useDispatch
 export const useThunkDispatch: () => ThunkDispatch<any, any, any> = useDispatch

@@ -4,10 +4,10 @@ import {
   addAlertItem,
   type IAlert,
   removeAlertItem,
-} from "@/slices/alertsSlice"
+} from "~/slices/alertsSlice"
 import { handleLoader } from "./handleLoader"
-import type { IRootState } from "@/utils/store"
-import { AUTO_DISMISS_AFTER_MS } from "@/constants/core"
+import type { IRootState } from "~/utils/store"
+import { AUTO_DISMISS_AFTER_MS } from "~/constants/core"
 import { handleErrors, type IResponseAction } from "./handleErrors"
 
 interface IBaseQuery {

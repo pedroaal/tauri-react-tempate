@@ -1,4 +1,4 @@
-import { useAppSelector } from "@/hooks/useStore"
+import { useAppSelector } from "~/hooks/useStore"
 
 const Loader = () => {
   const { list } = useAppSelector((state) => state.loader)

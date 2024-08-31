@@ -1,6 +1,6 @@
 import type { Dispatch } from "@reduxjs/toolkit"
 
-import { addLoaderItem, removeLoaderItem } from "@/slices/loaderSlice"
+import { addLoaderItem, removeLoaderItem } from "~/slices/loaderSlice"
 
 export const handleLoader = (
   ref: string,

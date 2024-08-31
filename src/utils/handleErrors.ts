@@ -4,12 +4,12 @@ import {
   API_ERRORS,
   AUTO_DISMISS_AFTER_MS,
   HTTP_RESPONSE_CODE,
-} from "@/constants/core"
+} from "~/constants/core"
 import {
   addAlertItem,
   type IAlert,
   removeAlertItem,
-} from "@/slices/alertsSlice"
+} from "~/slices/alertsSlice"
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type IResponseAction = (response: any) => PayloadAction<any>

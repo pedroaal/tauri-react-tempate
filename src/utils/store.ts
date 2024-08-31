@@ -11,8 +11,8 @@ import {
   REHYDRATE,
 } from "redux-persist"
 import storage from "redux-persist/lib/storage"
-import { rootReducer } from "@/slices/root"
-import { rootServices } from "@/services/root"
+import { rootReducer } from "~/slices/root"
+import { rootServices } from "~/services/root"
 
 const persistConfig = {
   key: "modi",

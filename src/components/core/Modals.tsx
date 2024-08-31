@@ -1,8 +1,8 @@
 import { createContext, useMemo, useState, useCallback } from "react"
 
-import { useAppSelector } from "@/hooks/useStore"
+import { useAppSelector } from "~/hooks/useStore"
 
-import MODALS from "@/modals/Index"
+import MODALS from "~/modals/Index"
 
 interface ICallback {
   callback(): void
