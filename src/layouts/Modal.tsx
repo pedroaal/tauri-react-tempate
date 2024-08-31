@@ -1,8 +1,7 @@
 import type { ReactNode } from "react"
 import { HiOutlineXMark } from "react-icons/hi2"
 
-import { closeModal } from "~/slices/modalSlice"
-import { useAppDispatch } from "~/hooks/useStore"
+import useModalStore from "~/store/modalStore"
 
 import ButtonIcon from "~/components/core/ButtonIcon"
 
@@ -15,10 +14,10 @@ interface IProps {
 const Modal = (props: IProps) => {
   const { children, header, footer } = props
 
-  const dispatch = useAppDispatch()
+  const { closeModal } = useModalStore()
 
   const handleClose = () => {
-    dispatch(closeModal())
+    closeModal()
   }
 
   return (

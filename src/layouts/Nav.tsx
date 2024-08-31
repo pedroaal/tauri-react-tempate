@@ -1,20 +1,22 @@
-import { useNavigation } from "react-router-dom"
+import { Link, useNavigation } from "react-router-dom"
 
-import ROUTES from "@/constants/navigation"
+import navigation from "~/constants/navigation"
 
 const Nav = () => {
-  const { location } = useNavigation()
+  const navigator = useNavigation()
 
   return (
     <div className="btm-nav">
-      {ROUTES.map((route) => {
+      {navigation.map((route) => {
         const { icon } = route
-        const isActive = location === route.name ? "active" : ""
+        const isActive = navigator.location === route.name ? "active" : ""
 
         return (
-          <button key={route.name} className={isActive}>
-            {icon({ className: "size-6" })}
-          </button>
+          <Link key={route.name} to={route.name}>
+            <button className={isActive}>
+              {icon({ className: "size-6" })}
+            </button>
+          </Link>
         )
       })}
     </div>

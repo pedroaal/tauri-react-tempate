@@ -1,11 +1,11 @@
 import { useMemo } from "react"
 
-import { useAppSelector } from "~/hooks/useStore"
+import useModalStore from "~/store/modalStore"
 
 import MODALS from "~/modals/Index"
 
 const Modals = () => {
-  const { showModal, modal } = useAppSelector((state) => state.modal)
+  const { showModal, modal } = useModalStore()
 
   const props = useMemo(() => {
     if (modal?.component && MODALS[modal?.component]) {

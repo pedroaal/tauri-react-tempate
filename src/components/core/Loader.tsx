@@ -1,9 +1,9 @@
-import { useAppSelector } from "~/hooks/useStore"
+import useLoaderStore from "~/store/loaderStore"
 
 const Loader = () => {
-  const { list } = useAppSelector((state) => state.loader)
+  const { loaders } = useLoaderStore()
 
-  if (list.length === 0) return null
+  if (loaders.length === 0) return null
 
   return (
     <div className="w-screen h-screen fixed top-0 left-0 z-50 bg-base-content/25 backdrop-blur-sm">

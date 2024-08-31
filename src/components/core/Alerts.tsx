@@ -4,8 +4,7 @@ import {
   HiOutlineExclamationTriangle,
   HiOutlineInformationCircle,
 } from "react-icons/hi2"
-
-import { useAppSelector } from "~/hooks/useStore"
+import useAlertStore from "~/store/alertStore"
 
 interface IConfig {
   color: string
@@ -38,14 +37,14 @@ const getConfig = (type: string): IConfig => {
 }
 
 const Alerts = () => {
-  const { list } = useAppSelector((state) => state.alerts)
+  const { alerts } = useAlertStore()
 
-  if (list.length === 0) return null
+  if (alerts.length === 0) return null
 
   return (
     <div className="w-full md:w-1/2 fixed top-0 right-0 overflow-y-auto z-50">
       <div className="flex flex-col gap-4 p-4">
-        {list.map((item, index) => {
+        {alerts.map((item, index) => {
           const { color, icon } = getConfig(item.type)
 
           return (
