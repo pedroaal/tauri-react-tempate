@@ -1,6 +1,6 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit"
 
-import type { IModals } from "@/modals/Index"
+import type { IModals } from "~/modals/Index"
 
 export interface IModalComponent {
   component: IModals
