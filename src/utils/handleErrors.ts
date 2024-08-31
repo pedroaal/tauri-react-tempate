@@ -5,11 +5,7 @@ import {
   AUTO_DISMISS_AFTER_MS,
   HTTP_RESPONSE_CODE,
 } from "~/constants/core"
-import {
-  addAlertItem,
-  type IAlert,
-  removeAlertItem,
-} from "~/slices/alertsSlice"
+import { addAlert, type IAlert, removeAlert } from "~/slices/alertsSlice"
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type IResponseAction = (response: any) => PayloadAction<any>
@@ -21,7 +17,7 @@ const dispatchErrorMessage = (
   apiErrorMessage: string,
   errorMessage: IAlert | undefined,
 ) => {
-  const errorAction = isRemove ? removeAlertItem : addAlertItem
+  const errorAction = isRemove ? removeAlert : addAlert
   if (
     errorMessage &&
     errorStatus &&

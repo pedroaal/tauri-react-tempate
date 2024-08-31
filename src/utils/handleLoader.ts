@@ -1,6 +1,6 @@
 import type { Dispatch } from "@reduxjs/toolkit"
 
-import { addLoaderItem, removeLoaderItem } from "~/slices/loaderSlice"
+import { addLoader, removeLoader } from "~/slices/loaderSlice"
 
 export const handleLoader = (
   ref: string,
@@ -13,8 +13,8 @@ export const handleLoader = (
   }
 
   if (isRemove) {
-    dispatch(removeLoaderItem(ref))
+    dispatch(removeLoader(ref))
   } else {
-    dispatch(addLoaderItem(ref))
+    dispatch(addLoader(ref))
   }
 }

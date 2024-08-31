@@ -1,10 +1,6 @@
 import type { BaseQueryApi, BaseQueryFn } from "@reduxjs/toolkit/query"
 
-import {
-  addAlertItem,
-  type IAlert,
-  removeAlertItem,
-} from "~/slices/alertsSlice"
+import { addAlert, removeAlert, type IAlert } from "~/slices/alertsSlice"
 import { handleLoader } from "./handleLoader"
 import type { IRootState } from "~/utils/store"
 import { AUTO_DISMISS_AFTER_MS } from "~/constants/core"
@@ -75,9 +71,9 @@ const baseQuery =
       }
 
       if (successMessage) {
-        api.dispatch(addAlertItem(successMessage))
+        api.dispatch(addAlert(successMessage))
         setTimeout(() => {
-          api.dispatch(removeAlertItem(successMessage))
+          api.dispatch(removeAlert(successMessage))
         }, AUTO_DISMISS_AFTER_MS)
       }
 

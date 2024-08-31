@@ -20,15 +20,15 @@ export const alertsSlice = createSlice({
   name: "alertsSlice",
   initialState,
   reducers: {
-    addAlertItem: (state, { payload }: PayloadAction<IAlert>) => {
+    addAlert: (state, { payload }: PayloadAction<IAlert>) => {
       state.list = [...state.list, payload]
     },
-    removeAlertItem: (state, { payload }: PayloadAction<IAlert>) => {
+    removeAlert: (state, { payload }: PayloadAction<IAlert>) => {
       state.list = state.list.filter((item) => item.value !== payload.value)
     },
   },
 })
 
-export const { addAlertItem, removeAlertItem } = alertsSlice.actions
+export const { addAlert, removeAlert } = alertsSlice.actions
 
 export default alertsSlice.reducer
