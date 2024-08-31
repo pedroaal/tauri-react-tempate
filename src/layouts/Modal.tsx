@@ -1,4 +1,3 @@
-import { forwardRef } from "react"
 import type { ReactNode } from "react"
 import { HiOutlineXMark } from "react-icons/hi2"
 
@@ -23,7 +22,7 @@ const Modal = (props: IProps) => {
   }
 
   return (
-    <dialog className="modal">
+    <dialog className="modal modal-open">
       <div className="modal-box">
         <div className="flex flex-row-reverse justify-between">
           <ButtonIcon
@@ -34,7 +33,7 @@ const Modal = (props: IProps) => {
                 aria-hidden="true"
               />
             }
-            className="modal-backdrop"
+            className="btn-sm btn-circle btn-ghost"
           />
           <h4>{header}</h4>
         </div>
@@ -49,4 +48,4 @@ const Modal = (props: IProps) => {
   )
 }
 
-export default forwardRef(Modal)
+export default Modal
