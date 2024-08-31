@@ -1,6 +1,8 @@
+import Main from "./Main"
+
 const MODALS = {
   main: {
-    component: <div>Main Modal</div>,
+    component: Main,
     props: {},
   },
 }
