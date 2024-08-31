@@ -1,14 +1,16 @@
-import { HiOutlineWrench } from "react-icons/hi2"
+import { HiOutlineHome, HiOutlineUser } from "react-icons/hi2"
 
-const ROUTES = [
+import Routes from "./routes"
+
+const navigation = [
   {
-    name: "home",
-    icon: HiOutlineWrench,
+    name: Routes.Home,
+    icon: HiOutlineHome,
   },
   {
-    name: "about",
-    icon: HiOutlineWrench,
+    name: Routes.About,
+    icon: HiOutlineUser,
   },
 ]
 
-export default ROUTES
+export default navigation
