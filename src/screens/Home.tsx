@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <div className="flex flex-col gap-4">
       <h4>Home</h4>
-      <MainModal title="Hola" />
+      <MainModal title="Hello from Main Modal" />
       <Button onClick={handleAlert}>Add Alert</Button>
       <Button onClick={handleLoader}>Add Loader</Button>
       <Button onClick={handleGreet}>Say hello</Button>

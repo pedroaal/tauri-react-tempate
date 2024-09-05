@@ -1,5 +1,3 @@
-import useModalStore from "~/store/modalStore"
-
 import {
   AlertDialog,
   AlertDialogAction,
@@ -9,33 +7,29 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
+  AlertDialogTrigger,
 } from "~/components/ui/alert-dialog"
 
 interface IProps {
   title: string
 }
 
-const Main = (props: IProps) => {
+const MainModal = (props: IProps) => {
   const { title } = props
-
-  const { closeModal } = useModalStore()
-
-  const handleClose = () => {
-    closeModal()
-  }
 
   return (
     <AlertDialog>
+      <AlertDialogTrigger>Open Modal</AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>Main Modal {title}</AlertDialogTitle>
+          <AlertDialogTitle>{title}</AlertDialogTitle>
           <AlertDialogDescription>
             This action cannot be undone. This will permanently delete your
             account and remove your data from our servers.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel onClick={handleClose}>Cancel</AlertDialogCancel>
+          <AlertDialogCancel>Cancel</AlertDialogCancel>
           <AlertDialogAction>Continue</AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
@@ -43,4 +37,4 @@ const Main = (props: IProps) => {
   )
 }
 
-export default Main
+export default MainModal
