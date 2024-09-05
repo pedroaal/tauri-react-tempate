@@ -9,9 +9,13 @@ const Home = () => {
   const { addLoader, removeLoader } = useLoaderStore()
 
   const handleAlert = () => {
-    addAlert({ title: "Alert", type: "SUCCESS", value: "Success" })
+    addAlert({ title: "Alert", type: "success", description: "Success" })
     setTimeout(() => {
-      removeAlert({ title: "Alert", type: "SUCCESS", value: "Success" })
+      removeAlert({
+        title: "Alert",
+        type: "success",
+        description: "Success",
+      })
     }, 1000)
   }
 

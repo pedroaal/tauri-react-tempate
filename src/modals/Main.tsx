@@ -9,6 +9,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "~/components/ui/alert-dialog"
+import { Button } from "~/components/ui/button"
 
 interface IProps {
   title: string
@@ -19,7 +20,9 @@ const MainModal = (props: IProps) => {
 
   return (
     <AlertDialog>
-      <AlertDialogTrigger>Open Modal</AlertDialogTrigger>
+      <AlertDialogTrigger>
+        <Button>Open Modal</Button>
+      </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle>{title}</AlertDialogTitle>

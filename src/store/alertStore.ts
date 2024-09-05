@@ -1,6 +1,12 @@
 import { create } from "zustand"
 
-export type IAlertTypes = "SUCCESS" | "DANGER" | "WARNING" | "INFO"
+export type IAlertTypes =
+  | "success"
+  | "error"
+  | "warning"
+  | "info"
+  | null
+  | undefined
 
 export interface IAlert {
   type: IAlertTypes
