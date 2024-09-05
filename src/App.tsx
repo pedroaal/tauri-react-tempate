@@ -8,7 +8,7 @@ import Alerts from "~/components/core/Alerts"
 import Loader from "~/components/core/Loader"
 import Modals from "~/components/core/Modals"
 
-import "./styles/index.scss"
+import "./index.css"
 
 const queryClient = new QueryClient()
 
