@@ -5,7 +5,7 @@ export type IAlertTypes = "SUCCESS" | "DANGER" | "WARNING" | "INFO"
 export interface IAlert {
   type: IAlertTypes
   title?: string
-  value: string
+  description: string
 }
 
 interface IAlertStore {
@@ -16,13 +16,15 @@ interface IAlertStore {
 
 const useAlertStore = create<IAlertStore>((set) => ({
   alerts: [],
-  addAlert: (alert) =>
-    set((state) => ({
+  addAlert: (alert: IAlert) =>
+    set((state: IAlertStore) => ({
       alerts: [...state.alerts, alert],
     })),
-  removeAlert: (alert) =>
-    set((state) => ({
-      alerts: state.alerts.filter((item) => item.value !== alert.value),
+  removeAlert: (alert: IAlert) =>
+    set((state: IAlertStore) => ({
+      alerts: state.alerts.filter(
+        (item) => item.description !== alert.description,
+      ),
     })),
 }))
 
