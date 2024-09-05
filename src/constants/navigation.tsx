@@ -1,15 +1,15 @@
-import { HiOutlineHome, HiOutlineUser } from "react-icons/hi2"
+import { HomeIcon, PersonIcon } from "@radix-ui/react-icons"
 
 import Routes from "./routes"
 
 const navigation = [
   {
     name: Routes.Home,
-    icon: HiOutlineHome,
+    icon: HomeIcon,
   },
   {
     name: Routes.About,
-    icon: HiOutlineUser,
+    icon: PersonIcon,
   },
 ]
 

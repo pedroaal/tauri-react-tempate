@@ -1,3 +1,4 @@
+import { Button } from "~/components/ui/button"
 import { sayHello } from "~/services/greet"
 import useAlertStore from "~/store/alertStore"
 import useLoaderStore from "~/store/loaderStore"
@@ -33,18 +34,10 @@ const Home = () => {
   return (
     <div className="flex flex-col gap-4">
       <h4>Home</h4>
-      <button type="button" className="btn" onClick={handleModal}>
-        Open Modal
-      </button>
-      <button type="button" className="btn" onClick={handleAlert}>
-        Add Alert
-      </button>
-      <button type="button" className="btn" onClick={handleLoader}>
-        Add Loader
-      </button>
-      <button type="button" className="btn" onClick={handleGreet}>
-        Say hello
-      </button>
+      <Button onClick={handleModal}>Open Modal</Button>
+      <Button onClick={handleAlert}>Add Alert</Button>
+      <Button onClick={handleLoader}>Add Loader</Button>
+      <Button onClick={handleGreet}>Say hello</Button>
     </div>
   )
 }

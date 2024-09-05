@@ -1,38 +1,23 @@
 import {
-  HiOutlineCheckCircle,
-  HiOutlineExclamationCircle,
-  HiOutlineExclamationTriangle,
-  HiOutlineInformationCircle,
-} from "react-icons/hi2"
+  CheckCircledIcon,
+  ExclamationTriangleIcon,
+  InfoCircledIcon,
+} from "@radix-ui/react-icons"
+
 import useAlertStore from "~/store/alertStore"
 
-interface IConfig {
-  color: string
-  icon: JSX.Element
-}
+import { Alert, AlertDescription, AlertTitle } from "~/components/ui/alert"
 
-const getConfig = (type: string): IConfig => {
+const getConfig = (type: string): JSX.Element => {
   switch (type) {
     case "success":
-      return {
-        color: "alert-success",
-        icon: <HiOutlineCheckCircle className="size-6" />,
-      }
+      return <CheckCircledIcon className="size-6" />
     case "error":
-      return {
-        color: "alert-error",
-        icon: <HiOutlineExclamationCircle className="size-6" />,
-      }
+      return <ExclamationTriangleIcon className="size-6" />
     case "warning":
-      return {
-        color: "alert-warning",
-        icon: <HiOutlineExclamationTriangle className="size-6" />,
-      }
+      return <ExclamationTriangleIcon className="size-6" />
     default:
-      return {
-        color: "alert-info",
-        icon: <HiOutlineInformationCircle className="size-6" />,
-      }
+      return <InfoCircledIcon className="size-6" />
   }
 }
 
@@ -45,16 +30,17 @@ const Alerts = () => {
     <div className="w-full md:w-1/2 fixed top-0 right-0 overflow-y-auto z-50">
       <div className="flex flex-col gap-4 p-4">
         {alerts.map((item, index) => {
-          const { color, icon } = getConfig(item.type)
+          const icon = getConfig(item.type)
+          const variant = item.type === "error" ? "destructive" : "default"
 
           return (
-            <div key={index} className={`alert ${color}`} role="alert">
+            <Alert key={index} variant={variant}>
               {icon}
-              <div className="flex flex-col gap-2">
-                <span>{item.title}</span>
-                {item.value && <span>{item.value}</span>}
-              </div>
-            </div>
+              <AlertTitle>{item.title}</AlertTitle>
+              {item.description && (
+                <AlertDescription>{item.description}</AlertDescription>
+              )}
+            </Alert>
           )
         })}
       </div>
