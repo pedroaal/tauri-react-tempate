@@ -1,3 +1,4 @@
+import { sayHello } from "~/services/greet"
 import useAlertStore from "~/store/alertStore"
 import useLoaderStore from "~/store/loaderStore"
 import useModalStore from "~/store/modalStore"
@@ -25,6 +26,10 @@ const Home = () => {
     }, 1000)
   }
 
+  const handleGreet = () => {
+    sayHello("Pedro")
+  }
+
   return (
     <div className="flex flex-col gap-4">
       <h4>Home</h4>
@@ -36,6 +41,9 @@ const Home = () => {
       </button>
       <button type="button" className="btn" onClick={handleLoader}>
         Add Loader
+      </button>
+      <button type="button" className="btn" onClick={handleGreet}>
+        Say hello
       </button>
     </div>
   )
