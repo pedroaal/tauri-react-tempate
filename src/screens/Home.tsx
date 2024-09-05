@@ -1,17 +1,12 @@
 import { Button } from "~/components/ui/button"
+import MainModal from "~/modals/Main"
 import { sayHello } from "~/services/greet"
 import useAlertStore from "~/store/alertStore"
 import useLoaderStore from "~/store/loaderStore"
-import useModalStore from "~/store/modalStore"
 
 const Home = () => {
   const { addAlert, removeAlert } = useAlertStore()
   const { addLoader, removeLoader } = useLoaderStore()
-  const { openModal } = useModalStore()
-
-  const handleModal = () => {
-    openModal({ component: "main", props: { title: "Main Modal" } })
-  }
 
   const handleAlert = () => {
     addAlert({ title: "Alert", type: "SUCCESS", value: "Success" })
@@ -34,7 +29,7 @@ const Home = () => {
   return (
     <div className="flex flex-col gap-4">
       <h4>Home</h4>
-      <Button onClick={handleModal}>Open Modal</Button>
+      <MainModal title="Hola" />
       <Button onClick={handleAlert}>Add Alert</Button>
       <Button onClick={handleLoader}>Add Loader</Button>
       <Button onClick={handleGreet}>Say hello</Button>
