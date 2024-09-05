@@ -6,9 +6,9 @@ const Loader = () => {
   if (loaders.length === 0) return null
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0">
+    <div className="fixed inset-0 bg-black/60">
       <div className="w-full h-full flex justify-center items-center">
-        <span className="loading loading-spinner loading-lg text-primary" />
+        <span className="loader w-20 h-20" />
       </div>
     </div>
   )
