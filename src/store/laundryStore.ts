@@ -9,7 +9,7 @@ interface ILaundryStore {
   getAll: (key: string) => void
 }
 
-const useLoaderStore = create<ILaundryStore>((set) => ({
+const useLaundryStore = create<ILaundryStore>((set) => ({
   laundries: [],
   getAll: async () => {
     const data = await useQuery(
@@ -21,4 +21,4 @@ const useLoaderStore = create<ILaundryStore>((set) => ({
   },
 }))
 
-export default useLoaderStore
+export default useLaundryStore
