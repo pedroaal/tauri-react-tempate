@@ -1,15 +1,22 @@
 import { create } from "zustand"
-import supabase from "~/utils/supabase"
+
+import { LaundriesCollectionId } from "~/config/collections"
+import { APPWRITE_DB_ID, db } from "~/utils/appwrite"
+import { useQuery } from "~/utils/baseQuery"
 
 interface ILaundryStore {
-  laundries: string[]
+  laundries: any[]
   getAll: (key: string) => void
 }
 
 const useLoaderStore = create<ILaundryStore>((set) => ({
   laundries: [],
   getAll: async () => {
-    const { data } = await supabase.from("laundries").select()
+    const data = await useQuery(
+      () => db.listDocuments(APPWRITE_DB_ID, LaundriesCollectionId),
+      {},
+    )
+
     set(() => ({ laundries: data ?? [] }))
   },
 }))
