@@ -10,7 +10,7 @@ import useAlertStore, { type IAlertTypes } from "~/store/alertStore"
 import { Alert, AlertDescription, AlertTitle } from "~/components/ui/alert"
 
 const getConfig = (
-  type: string,
+  type: IAlertTypes,
 ): {
   variant: IAlertTypes
   icon: JSX.Element
@@ -56,7 +56,11 @@ const Alerts = () => {
           const { variant, icon } = getConfig(item.type)
 
           return (
-            <Alert key={index} variant={variant} className="flex gap-2">
+            <Alert
+              key={`alert.${index}`}
+              variant={variant}
+              className="flex gap-2"
+            >
               {icon}
               <div className="flex flex-col gap-2">
                 <AlertTitle>{item.title}</AlertTitle>
