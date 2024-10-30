@@ -16,6 +16,7 @@
     "@supabase/supabase-js": "^2.46.1",
     "@tauri-apps/api": ">=2.0.0-rc.0",
     "@tauri-apps/plugin-shell": ">=2.0.0-rc.0",
+    "appwrite": "^16.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.454.0",
