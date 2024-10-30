@@ -1,11 +1,12 @@
 {
+  "$schema": "https://schema.tauri.app/config/2",
   "productName": "lavanderia",
   "version": "0.1.0",
   "identifier": "com.lavanderia.app",
   "build": {
-    "beforeDevCommand": "pnpm dev",
+    "beforeDevCommand": "yarn dev",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "pnpm build",
+    "beforeBuildCommand": "yarn build",
     "frontendDist": "../dist"
   },
   "app": {
