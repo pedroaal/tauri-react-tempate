@@ -4,8 +4,8 @@ import Routes from "~/constants/routes"
 
 import Main from "~/layouts/Main"
 
-import About from "~/screens/About"
 import Home from "~/screens/Home"
+import Profile from "~/screens/Profile"
 
 const router = createBrowserRouter([
   {
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
         index: true,
       },
       {
-        path: Routes.About,
-        element: <About />,
+        path: Routes.Profile,
+        element: <Profile />,
       },
     ],
   },

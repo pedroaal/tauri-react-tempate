@@ -1,6 +1,6 @@
 enum Routes {
   Home = "/",
-  About = "/about",
+  Profile = "/profile",
 }
 
 export default Routes
