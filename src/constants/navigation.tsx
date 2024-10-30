@@ -5,11 +5,11 @@ import Routes from "./routes"
 const navigation = [
   {
     name: Routes.Home,
-    icon: HomeIcon,
+    icon: <HomeIcon className="size-6" />,
   },
   {
-    name: Routes.About,
-    icon: PersonIcon,
+    name: Routes.Profile,
+    icon: <PersonIcon className="size-6" />,
   },
 ]
 
