@@ -1,42 +1,15 @@
-import { Button } from "~/components/ui/button"
-import MainModal from "~/modals/Main"
-import { sayHello } from "~/services/greet"
-import useAlertStore from "~/store/alertStore"
-import useLoaderStore from "~/store/loaderStore"
+import Laundry from "~/components/Laundry"
+import Promos from "~/components/Promos"
+import Search from "~/components/Search"
 
 const Home = () => {
-  const { addAlert, removeAlert } = useAlertStore()
-  const { addLoader, removeLoader } = useLoaderStore()
-
-  const handleAlert = () => {
-    addAlert({ title: "Alert", type: "success", description: "Success" })
-    setTimeout(() => {
-      removeAlert({
-        title: "Alert",
-        type: "success",
-        description: "Success",
-      })
-    }, 1000)
-  }
-
-  const handleLoader = () => {
-    addLoader("main")
-    setTimeout(() => {
-      removeLoader("main")
-    }, 1000)
-  }
-
-  const handleGreet = () => {
-    sayHello("Pedro")
-  }
-
   return (
     <div className="flex flex-col gap-4">
-      <h4>Home</h4>
-      <MainModal title="Hello from Main Modal" />
-      <Button onClick={handleAlert}>Add Alert</Button>
-      <Button onClick={handleLoader}>Add Loader</Button>
-      <Button onClick={handleGreet}>Say hello</Button>
+      <Search />
+      <Promos />
+      <div className="grid">
+        <Laundry />
+      </div>
     </div>
   )
 }
