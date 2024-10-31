@@ -4,11 +4,13 @@ import Routes from "./routes"
 
 const navigation = [
   {
-    name: Routes.Home,
+    name: "Home",
+    path: Routes.Home,
     icon: <HomeIcon className="size-6" />,
   },
   {
-    name: Routes.Profile,
+    name: "Profile",
+    path: Routes.Profile,
     icon: <PersonIcon className="size-6" />,
   },
 ]
