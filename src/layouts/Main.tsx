@@ -4,11 +4,11 @@ import Nav from "./Nav"
 
 const Main = () => {
   return (
-    <div className="min-w-screen min-h-screen">
-      <div className="container">
+    <div className="h-dvh w-dvw flex flex-col">
+      <div className="grow overflow-x-auto max-w-full">
         <Outlet />
-        <Nav />
       </div>
+      <Nav />
     </div>
   )
 }
