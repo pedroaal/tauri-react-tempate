@@ -1,13 +1,13 @@
 import {
-  CheckCircledIcon,
+  CheckCircleIcon,
   ExclamationTriangleIcon,
-  InfoCircledIcon,
-  RocketIcon,
-} from "@radix-ui/react-icons"
+  InformationCircleIcon,
+  RocketLaunchIcon,
+} from "@heroicons/react/24/outline"
 
 import useAlertStore, { type IAlertTypes } from "~/store/alertStore"
 
-import { Alert, AlertDescription, AlertTitle } from "~/components/ui/alert"
+import { Alert, AlertDescription, AlertTitle } from "~/components/alert"
 
 const getConfig = (
   type: IAlertTypes,
@@ -19,7 +19,7 @@ const getConfig = (
     case "success":
       return {
         variant: "success",
-        icon: <CheckCircledIcon className="size-4" />,
+        icon: <CheckCircleIcon className="size-4" />,
       }
     case "error":
       return {
@@ -34,12 +34,12 @@ const getConfig = (
     case "info":
       return {
         variant: "info",
-        icon: <InfoCircledIcon className="size-4" />,
+        icon: <InformationCircleIcon className="size-4" />,
       }
     default:
       return {
         variant: undefined,
-        icon: <RocketIcon className="size-4" />,
+        icon: <RocketLaunchIcon className="size-4" />,
       }
   }
 }

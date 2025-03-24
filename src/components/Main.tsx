@@ -1,7 +1,5 @@
-import useMainStore from "~/store/mainStore"
-
 const Main = () => {
-  const data = useMainStore((state) => state.data)
+  const data = [] // call from backend
 
   return (
     <div className="grid">

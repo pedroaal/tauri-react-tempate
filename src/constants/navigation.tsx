@@ -1,4 +1,4 @@
-import { HomeIcon, PersonIcon } from "@radix-ui/react-icons"
+import { HomeIcon, UserIcon } from "@heroicons/react/24/outline"
 
 import Routes from "./routes"
 
@@ -11,7 +11,7 @@ const navigation = [
   {
     name: "Profile",
     path: Routes.Profile,
-    icon: <PersonIcon className="size-6" />,
+    icon: <UserIcon className="size-6" />,
   },
 ]
 

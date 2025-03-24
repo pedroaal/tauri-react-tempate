@@ -8,8 +8,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "~/components/ui/alert-dialog"
-import { Button } from "~/components/ui/button"
+} from "~/components/shared/AlertDialog"
+import { Button } from "~/components/shared/button"
 
 interface IProps {
   title: string

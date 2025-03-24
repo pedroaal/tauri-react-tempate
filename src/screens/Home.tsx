@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import Main from "~/components/Main"
 
-import { Input } from "~/components/ui/input"
+import { Input } from "~/components/shared/Input"
 
 const Home = () => {
   const [search, setSearch] = useState("")
