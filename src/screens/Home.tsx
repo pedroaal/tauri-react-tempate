@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import Laundries from "~/components/Laundries"
+import Main from "~/components/Main"
 
 import { Input } from "~/components/ui/input"
 
@@ -13,7 +13,7 @@ const Home = () => {
         value={search}
         onChange={(event) => setSearch(event.target.value)}
       />
-      <Laundries />
+      <Main />
     </div>
   )
 }

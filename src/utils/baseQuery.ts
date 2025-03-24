@@ -1,4 +1,3 @@
-import generateKey from "./key"
 import useLoaderStore from "~/store/loaderStore"
 import useAlertStore from "~/store/alertStore"
 
@@ -16,7 +15,7 @@ export const useQuery = async <T>(
   const addLoader = useLoaderStore.getState().addLoader
   const removeLoader = useLoaderStore.getState().removeLoader
   const addAlert = useAlertStore.getState().addAlert
-  const key = generateKey()
+  const key = getUUID()
 
   addLoader(key)
 
