@@ -1,5 +1,5 @@
 use crate::domain::models::Todo;
-use crate::ports::repositories::TodoRepository;
+use crate::domain::ports::todoTrait::TodoRepository;
 use std::error::Error;
 use std::sync::Arc;
 

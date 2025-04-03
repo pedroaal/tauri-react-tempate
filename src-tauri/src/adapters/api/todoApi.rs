@@ -1,5 +1,5 @@
 use crate::domain::models::Todo;
-use crate::domain::services::TodoService;
+use crate::services::todoService::TodoService;
 use std::sync::Arc;
 
 #[tauri::command]

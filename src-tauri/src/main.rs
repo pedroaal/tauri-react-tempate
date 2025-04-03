@@ -1,12 +1,12 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-mod domain;
-mod ports;
 mod adapters;
+mod domain;
+mod services;
 
-use adapters::repositories::sqlite::SqliteTodoRepository;
-use domain::services::TodoService;
+use adapters::repositories::todoRepo::SqliteTodoRepository;
+use services::TodoService;
 use rusqlite::Connection;
 use std::path::PathBuf;
 use std::sync::Arc;
