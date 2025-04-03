@@ -1,6 +1,6 @@
 import { forwardRef, type HTMLAttributes } from "react"
-import { cn } from "../../utils/classes"
-import type { IAlertTypes } from "~/store/alertStore"
+import { cn } from "~/utils/classes"
+import type { IAlertTypes } from "~/ui/store/alertStore"
 
 interface IAlertProps extends HTMLAttributes<HTMLDivElement> {
   variant?: IAlertTypes

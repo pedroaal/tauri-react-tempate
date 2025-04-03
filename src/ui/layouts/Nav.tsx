@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 
-import navigation from "~/constants/navigation"
+import navigation from "~/ui/constants/navigation"
 import { cn } from "~/utils/classes"
 
 const Nav = () => {

@@ -1,4 +1,4 @@
-import type { ITodo } from "../../domain/models/todo.interface"
+import type { ITodo } from "../models/todo.interface"
 
 export interface ITodoApi {
   getAllTodos(): Promise<ITodo[]>

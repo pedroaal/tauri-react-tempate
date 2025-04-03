@@ -1,4 +1,4 @@
-import useLoaderStore from "~/store/loaderStore"
+import useLoaderStore from "~/ui/store/loaderStore"
 
 const Loader = () => {
   const { loaders } = useLoaderStore()

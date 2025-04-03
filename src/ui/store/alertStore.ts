@@ -1,5 +1,5 @@
 import { create } from "zustand"
-import { AUTO_DISMISS_AFTER_MS } from "~/constants/core"
+import { AUTO_DISMISS_AFTER_MS } from "~/ui/constants/core"
 
 export type IAlertTypes =
   | "success"

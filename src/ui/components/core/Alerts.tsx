@@ -5,7 +5,7 @@ import {
   RocketLaunchIcon,
 } from "@heroicons/react/24/outline"
 
-import useAlertStore, { type IAlertTypes } from "~/store/alertStore"
+import useAlertStore, { type IAlertTypes } from "~/ui/store/alertStore"
 
 import { Alert, AlertDescription, AlertTitle } from "./Alert"
 

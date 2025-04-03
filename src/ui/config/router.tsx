@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom"
 
-import Routes from "~/constants/routes"
+import Routes from "~/ui/constants/routes"
 
 import Main from "~/ui/layouts/Main"
 
