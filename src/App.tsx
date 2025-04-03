@@ -1,10 +1,10 @@
 import { createPortal } from "react-dom"
 import { RouterProvider } from "react-router-dom"
 
-import router from "./config/router"
+import router from "~/ui/config/router"
 
-import Alerts from "~/components/core/Alerts"
-import Loader from "~/components/core/Loader"
+import Alerts from "~/ui/components/core/Alerts"
+import Loader from "~/ui/components/core/Loader"
 
 import "./index.css"
 

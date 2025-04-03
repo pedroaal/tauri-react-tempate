@@ -1,5 +1,5 @@
-import type { ITodo } from "../models/Todo"
-import type { ITodoApi } from "../../ports/api/TodoApi"
+import type { ITodo } from "../models/todo.interface"
+import type { ITodoApi } from "../ports/todo.adapter.interface"
 
 export class TodoService {
   constructor(private api: ITodoApi) {}
