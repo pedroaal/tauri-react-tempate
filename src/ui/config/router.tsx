@@ -2,10 +2,10 @@ import { createBrowserRouter } from "react-router-dom"
 
 import Routes from "~/constants/routes"
 
-import Main from "~/layouts/Main"
+import Main from "~/ui/layouts/Main"
 
-import Home from "~/screens/Home"
-import Profile from "~/screens/Profile"
+import Home from "~/ui/pages/Home"
+import Profile from "~/ui/pages/Profile"
 
 const router = createBrowserRouter([
   {
