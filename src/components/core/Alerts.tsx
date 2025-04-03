@@ -7,7 +7,7 @@ import {
 
 import useAlertStore, { type IAlertTypes } from "~/store/alertStore"
 
-import { Alert, AlertDescription, AlertTitle } from "~/components/alert"
+import { Alert, AlertDescription, AlertTitle } from "./Alert"
 
 const getConfig = (
   type: IAlertTypes,
