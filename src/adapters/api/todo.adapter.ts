@@ -1,6 +1,6 @@
 import { invoke } from "@tauri-apps/api/core"
 import type { ITodo } from "~/domain/models/todo.interface"
-import type { ITodoApi } from "~/domain/ports/todo.adapter.interface"
+import type { ITodoApi } from "~/domain/ports/api/todo.adapter.interface"
 
 export class TodoApi implements ITodoApi {
   async getAllTodos(): Promise<ITodo[]> {

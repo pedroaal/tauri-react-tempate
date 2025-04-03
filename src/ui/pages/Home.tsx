@@ -1,8 +1,8 @@
 import { useState } from "react"
 
-import Main from "~/components/Main"
+import Main from "~/ui/components/Main"
 
-import { Input } from "~/components/shared/Input"
+import { Input } from "~/ui/components/shared/Input"
 
 const Home = () => {
   const [search, setSearch] = useState("")

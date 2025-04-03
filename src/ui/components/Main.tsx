@@ -1,5 +1,8 @@
+import { TodoService } from "~/services/todo.service"
+
 const Main = () => {
-  const data = [] // call from backend
+  const repo = new TodoService()
+  const data = repo.getAllTodos()
 
   return (
     <div className="grid">
