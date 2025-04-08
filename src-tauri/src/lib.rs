@@ -2,8 +2,8 @@ mod adapters;
 mod domain;
 mod services;
 
-use adapters::repositories::todoRepo::SqliteTodoRepository;
-use services::todoService::TodoService;
+use adapters::repositories::todo_repo::SqliteTodoRepository;
+use services::todo_service::TodoService;
 use rusqlite::Connection;
 use std::path::PathBuf;
 use std::sync::Arc;
@@ -11,7 +11,10 @@ use std::env;
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
-    let app_data_dir = env::current_dir().expect("Failed to get current directory").join("app_data");
+    // Usar un directorio fuera de src-tauri para evitar reconstrucciones constantes
+    let app_data_dir = env::current_dir().expect("Failed to get current directory")
+        .parent().expect("Failed to get parent directory")
+        .join("app_data");
     let db_path: PathBuf = app_data_dir.join("todos.db");
     
     // Create the app data directory if it doesn't exist
@@ -31,11 +34,11 @@ pub fn run() {
         .plugin(tauri_plugin_shell::init())
         .manage(todo_service)
         .invoke_handler(tauri::generate_handler![
-            adapters::api::todoApi::get_all_todos,
-            adapters::api::todoApi::get_todo,
-            adapters::api::todoApi::create_todo,
-            adapters::api::todoApi::update_todo,
-            adapters::api::todoApi::delete_todo,
+            adapters::api::todo_api::get_all_todos,
+            adapters::api::todo_api::get_todo,
+            adapters::api::todo_api::create_todo,
+            adapters::api::todo_api::update_todo,
+            adapters::api::todo_api::delete_todo,
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
